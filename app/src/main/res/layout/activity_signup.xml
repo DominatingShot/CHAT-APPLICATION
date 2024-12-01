@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:overScrollMode="never"
+    android:clipToPadding="false"
+    android:scrollbars="none"
+    android:padding="@dimen/_24sdp"
+    tools:context=".activities.SignupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        tools:ignore="ExtraText">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create New Account"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/secondary_text"
+        />
+        <FrameLayout
+            android:id="@+id/LayoutImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp">
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                android:src="@drawable/background_image"
+                android:layout_gravity="center"
+                android:id="@+id/ImageProfile"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Add Image"
+                android:id="@+id/textAddImage"
+                android:textSize="@dimen/_13ssp"
+                android:layout_gravity="center"
+                android:textColor="@color/input_text"
+                />
+        </FrameLayout>
+
+    <EditText
+        android:layout_width="250dp"
+        android:id="@+id/Name_input"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/background_input"
+        android:hint="Name"
+        android:paddingLeft="@dimen/_20sdp"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColor="@color/input_text"
+        android:textSize="@dimen/_13ssp"
+        />
+    <EditText
+        android:layout_width="250dp"
+        android:id="@+id/Email_input"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:background="@drawable/background_input"
+        android:hint="Email"
+        android:paddingLeft="@dimen/_20sdp"
+        android:importantForAutofill="no"
+        android:textColor="@color/input_text"
+        android:textSize="@dimen/_13ssp"/>
+        <EditText
+            android:id="@+id/Password_input"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/background_input"
+            android:hint="Password"
+            android:paddingLeft="@dimen/_20sdp"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="@color/input_text"
+            android:textSize="17dp"/>
+        <EditText
+            android:id="@+id/Password_verify_input"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/background_input"
+            android:hint="Confirm Password"
+            android:paddingLeft="@dimen/_20sdp"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="@color/input_text"
+            android:textSize="18dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:animateLayoutChanges="true"
+        >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/textSignUp"
+            android:layout_width="250dp"
+            android:layout_height="@dimen/_45sdp"
+            android:text="Sign up"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            />
+        <ProgressBar
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_gravity="center"
+            android:visibility="invisible"
+            android:id="@+id/progressBar"
+            />
+        </FrameLayout>
+
+    <TextView
+        android:id="@+id/textSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="login"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/secondary_text"
+        android:paddingBottom="20dp"
+        />
+    </LinearLayout>
+
+
+
+</ScrollView>
